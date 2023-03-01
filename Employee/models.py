@@ -26,3 +26,24 @@ class PassbookInform(MyBaseModel):
     acc_open_date = models.DateTimeField(auto_now_add=True)
     passbook_type = models.CharField(max_length=100)
     self_address = models.CharField(max_length=255)
+
+
+class BankHRInform(MyBaseModel):
+    name = models.CharField(max_length=255)
+    address = models.CharField(max_length=255)
+    education = models.CharField(max_length=255)
+    branch_name = models.CharField(max_length=100)
+    phone_no = models.IntegerField()
+    payment = models.IntegerField()
+    email = models.CharField(max_length=100)
+
+
+class CheckBook(MyBaseModel):
+    account_no = models.IntegerField()
+    rupees = models.IntegerField()
+    pay = models.IntegerField()
+    signature = models.CharField(max_length=100)
+    date = models.DateTimeField(auto_now_add=True)
+    day = models.CharField(max_length=100) 
+
+

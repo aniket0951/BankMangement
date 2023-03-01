@@ -20,6 +20,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/user/', include('BankInForm.urls')),
     path('api/user/', include('Employee.urls')),
-    path('api/user/', include('Accounts.urls')),
+    path('api/user/', include('Accountant.urls')),
 
 ]
